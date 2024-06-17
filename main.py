@@ -1,6 +1,7 @@
 import os
+from typing import Callable
 
-def rename_folders(path: str, normalize_function) -> None:
+def rename_folders(path: str, normalize_function: Callable[[str], str]) -> None:
 
     """
     This function renames all the folders in the given path using the normalize_function. 
@@ -8,7 +9,7 @@ def rename_folders(path: str, normalize_function) -> None:
 
     Args:
         path (str): The path to the directory containing the folders to be renamed
-        normalize_function () : A function that takes a string as input and returns a string
+        normalize_function (Callable[[str], str]): A function that takes a string as input and returns a string
 
     Returns:
         None

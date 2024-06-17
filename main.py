@@ -37,7 +37,7 @@ def normalize_filename(file_name: str) -> str:
 
 
 def main() -> None:
-    DIR_PATH = "../leetcode-solutions"
+    DIR_PATH: str = "../leetcode-solutions"
     rename_folders(DIR_PATH, normalize_filename)
 
 
